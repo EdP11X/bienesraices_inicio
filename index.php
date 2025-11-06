@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    <header class="header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="Icono menu responsive">
-                </div>
-
-                <div class="derecha">
-                    <img class="darck-mode-boton" src="build/img/dark-mode.svg" alt="" >
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div>
-            <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
-        </div>
-    </header>
+<?php
+    declare(strict_types=1);
+    require 'includes/funciones.php';
+    incluirTemplate(true, $inicio = true);
+?>
 
     <main class="contenedor seccion">
         <h1>Mas Sobre Nostros</h1>
@@ -86,7 +57,7 @@
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver Propiedad   
                     </a>
 
@@ -120,7 +91,7 @@
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver Propiedad   
                     </a>
 
@@ -154,7 +125,7 @@
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver Propiedad   
                     </a>
 
@@ -163,14 +134,14 @@
 
         </div><!-- contenedor-anuncios -->
         <div class="alinear-derecha">
-            <a href="anuncios.html" class="boton-verde">Ver todas</a>
+            <a href="anuncios.php" class="boton-verde">Ver todas</a>
         </div>
     </section>
 
     <section class="imagen-contacto">
         <h2>Enceuntra la casa de tus sueños</h2>
         <p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
-        <a href="contacto.html" class="boton-amarillo">Contactanos</a>
+        <a href="contacto.php" class="boton-amarillo">Contactanos</a>
     </section>
 
     <di class="contenedro seccion seccion-inferior">
@@ -187,7 +158,7 @@
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p class="informacion-meta">Escrito el: <span>20/10/2025</span> por: <span>Admin</span></p>
                         <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero</p>
@@ -205,7 +176,7 @@
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guia para la decoracion de tu hogar</h4>
                         <p class="informacion-meta">Escrito el: <span>20/10/2025</span> por: <span>Admin</span></p>
                         <p>Maximiza el espacio de tu hogar cone sta gui, combina muebles y aprende como dar volor y vida a tu casa</p>
@@ -228,18 +199,6 @@
 
     </di>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenido-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos reservados 2025 &copy;</p>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php
+    incluirTemplate('footer');
+?>
