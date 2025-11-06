@@ -43,8 +43,9 @@
     //margin-top: 1rem;
     //display: none;
     visibility: hidden;
-    transition: visibility .3s ease-in-out, opacity .5s linear;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear;
     opacity: 0;
+    height: 0;
 
     @include tablet{
         display: flex;
@@ -92,4 +93,5 @@
     visibility: visible;
     opacity: 1;
     transition: visibility 3s ease-in-out;
+    height: auto;
 }
