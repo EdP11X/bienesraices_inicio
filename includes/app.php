@@ -1,8 +1,4 @@
 <?php
 
-require 'app.php';
-
-function incluirTemplate( $nombre ) {
-    echo TEMPLATES_URL ."/${nombre}.php";
-    include TEMPLATES_URL ."/${nombre}.php";
-}
+define('TEMPLATES_URL', __DIR__ . '/templates');
+define('FUNCIONES_URL', __DIR__ . 'funciones.php');

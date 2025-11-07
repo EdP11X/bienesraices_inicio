@@ -2,6 +2,15 @@
 
 require 'app.php';
 
-function incluirTemplate( string $nombre, bool $inicio = false ) {
-    include TEMPLATES_URL . "/${nombre}.php";
+function incluirTemplate( string  $nombre, bool $inicio = false ) {
+    include TEMPLATES_URL . "/{$nombre}.php"; 
+}
+
+function estaAutenticado() : bool {
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+
+    $auth = $_SESSION['login'] ?? false;
+    return $auth ? true : false;
 }
